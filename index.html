@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="heading">TO THE NEW</h1>
+        <div class="navbar">
+            <a href="">Home</a>
+            <a href="">Quick Help</a>
+        </div>
+    </header>
+    <div class="container">
+        <div class="form_box">
+                <p class="form_heading">Bug Report</p>
+                <form action="">
+                    <div class="field_container">
+                        <label for="">Title:*</label>
+                        <input type="text" required style="border-radius: 5px; border: solid 1px rgb(192, 192, 192);">
+                    </div>
+                    <div class="field_container">
+                        <label for="">Description:*</label>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="field_container">
+                        <label for="">Operating System:</label>
+                        <select name="Operating Systems" id="op_sys">
+                            <option value="Windows XP">Windows XP</option>
+                            <option value="Ubuntu">Ubuntu</option>
+                            <option value="MacOs">MacOs</option>
+                        </select>
+                    </div>
+                    <div class="field_container">
+                        <label for="">Product:*</label>
+                        <select name="product" id="product_id">
+                            <option value="Formoid">Formoid</option>
+                            <option value="Formoid_2">Formoid 2</option>
+                            <option value="Formoid_3">Formoid 3</option>
+                        </select>
+                    </div>
+                    <div class="field_container">
+                        <label for="">Version:*</label>
+                        <input type="text" class="version">
+                    </div>
+                    <div class="radio_container">
+                        <label for="">License:</label>
+                        <div class="radio_row">
+                            <div class="radio_buttons">
+                                <input type="radio" name="radio" class="radio_button">
+                                <label for="" style="margin-left: 10px;">Free</label>
+                            </div>
+                            <div class="radio_buttons">
+                                <input type="radio" name="radio" class="radio_button">
+                                <label for="" style="margin-left: 10px;">Business</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field_container">
+                        <label for="">Severity</label>
+                        <select name="Severity" id="severity">
+                            <option value="critical">Critical</option>
+                            <option value="moderate">Moderate</option>
+                            <option value="low">Low</option>
+                        </select>
+                    </div>
+                    <div class="field_container">
+                        <label for="">Attachments:</label>
+                        <input type="file" id="attachments">
+                    </div>
+                    <div class="btn">
+                        <button type="submit">Send</button>
+                        
+                    </div>
+                </form>
+        </div>
+    </div>
+</body>
+</html>
